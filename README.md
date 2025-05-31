@@ -28,16 +28,19 @@
 
 # Установка и запуск
 
-1. Убедитесь, что у вас установлен Docker и Docker Compose. Docker Compose включён в Docker Desktop. <br /> 
-Скачать Docker Desktop можно с [официального сайта] (https://www.docker.com/products/docker-desktop/)
-2. Откройте терминал/командную строку.
-3. Клонируйте репозиторий:
+1. Установите Java JDK 17<br />
+Скачать можно с официального сайта Oracle <br />https://www.oracle.com/java/technologies/javase/jdk17-0-13-later-archive-downloads.html
+
+2. Убедитесь, что у вас установлен Docker и Docker Compose. Docker Compose включён в Docker Desktop. <br /> 
+Скачать Docker Desktop можно с официального сайта <br />https://www.docker.com/products/docker-desktop/
+3. Откройте терминал/командную строку.
+4. Клонируйте репозиторий:
 
 ```bash
 git clone https://github.com/Alivaros/WEB-repos.git
 ```
 
-4. Перейдите в директорию проекта
+5. Перейдите в директорию проекта
 ```bash
 cd WEB-repos
 ```
