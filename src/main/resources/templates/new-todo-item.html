@@ -1,40 +1,40 @@
 <!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
+    <title>Добавить новую задачу</title>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <meta name="viewport" content="width=device-width, initial-scale = 1">
-    <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/5.3.5/css/bootstrap.min.css}"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/5.3.5/css/bootstrap.min.css}" />
+    <link th:rel="stylesheet" th:href="@{/webjars/bootstrap-icons/1.13.1/font/bootstrap-icons.css}" />
 </head>
 <body>
 <div class="container">
     <div class="row mt-5">
-        <div class="col-2">
-            <p><a class="btn btn-outline-success" href="/">
-                <i class="bi bi-arrow-left-square-fill"></i> Вернуться назад</a>
-            </p>
+        <div class="col-3">
+            <a class="btn btn-outline-success" href="/">
+                <i class="bi bi-arrow-left-circle"></i> Вернуться назад
+            </a>
         </div>
         <div class="col-6">
-            <h2>Добавить новую задачу</h2>
-            <form action="#" th:action="@{/todo}" th:object="${todoItem}" method="POST">
-                <div class="form-group">
-                    <label for="description">Описание</label>
+            <h2 class="mb-4">Добавить новую задачу</h2>
+            <form th:action="@{/todo}" th:object="${todoItem}" method="POST">
+                <div class="form-group mb-3">
+                    <label for="description" class="form-label">Описание</label>
                     <input class="form-control"
                            type="text"
                            th:field="*{description}"
                            id="description"
-                           placeholder="Описание"
-                    >
-
-                    <button type="submit" class="btn btn-outline-success">
-                        <i class="bi bi-plus-square-fill"></i> Добавить задачу
-                    </button>
-
+                           placeholder="Введите описание задачи">
                 </div>
+                <button type="submit" class="btn btn-outline-success">
+                    <i class="bi bi-plus-circle"></i> Добавить задачу
+                </button>
             </form>
         </div>
     </div>
 </div>
-<script th:src="@{/webjars/bootstrap/5.3.5/js/bootstrap.min.js}"></script>
+
+<script th:src="@{/webjars/bootstrap/5.3.5/js/bootstrap.bundle.min.js}"></script>
 </body>
 </html>
