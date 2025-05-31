@@ -1,7 +1,7 @@
 version: '3'
 services:
   web:
-    image: kiril/web-sever:v3
+    image: todo/web-sever:v3
     build: .
     ports:
       - "3000:8080"
