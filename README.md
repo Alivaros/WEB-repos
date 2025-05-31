@@ -29,7 +29,7 @@
 # Установка и запуск
 
 1. Установите Java JDK 17<br />
-Скачать можно с официального сайта Oracle <br />https://www.oracle.com/java/technologies/javase/jdk17-0-13-later-archive-downloads.html
+Скачать можно с  Adoptium <br /> https://adoptium.net/temurin/releases/?version=17&os=any&arch=any
 
 2. Убедитесь, что у вас установлен Docker и Docker Compose. Docker Compose включён в Docker Desktop. <br /> 
 Скачать Docker Desktop можно с официального сайта <br />https://www.docker.com/products/docker-desktop/
