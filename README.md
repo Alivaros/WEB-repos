@@ -31,32 +31,33 @@
 1. Установите Java JDK 17<br />
 Скачать можно с  Adoptium <br /> https://adoptium.net/temurin/releases/?version=17&os=any&arch=any
 
-2. Убедитесь, что у вас установлен Docker и Docker Compose. Docker Compose включён в Docker Desktop. <br /> 
-Скачать Docker Desktop можно с официального сайта <br />https://www.docker.com/products/docker-desktop/
-3. Откройте терминал/командную строку.
-4. Клонируйте репозиторий:
+2. Откройте терминал/командную строку.
+3. Клонируйте репозиторий:
 
 ```bash
 git clone https://github.com/Alivaros/WEB-repos.git
 ```
 
-5. Перейдите в директорию проекта
+4. Перейдите в директорию проекта
 ```bash
 cd WEB-repos
 ```
 
 ## Docker
 
-1. Введите в терминал/командную строку команду для сборки и запуска контейнеров:
+1. Убедитесь, что у вас установлен Docker и Docker Compose. Docker Compose включён в Docker Desktop. <br /> 
+Скачать Docker Desktop можно с официального сайта <br />https://www.docker.com/products/docker-desktop/
+
+2. Введите в терминал/командную строку команду для сборки и запуска контейнеров:
    
 ```bash
 docker-compose up --build
 ```
 
-2. Перейдите в браузере по адресу:
+3. Перейдите в браузере по адресу:
   http://localhost:3000
 
-3. Для остановки введите
+4. Для остановки введите
 
 ```bash
 docker-compose down
